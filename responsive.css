@@ -1,0 +1,299 @@
+@media screen and (max-width: 1024px) {
+  .hero-section {
+    height: 400px;
+  }
+  .hero-content {
+    padding: 0 50px;
+    width: 60%;
+  }
+  .hero-content h1 {
+    font-size: 3.1rem;
+  }
+  .hero-content h1 span {
+    font-size: 3.5rem;
+  }
+  .hero-content h1::before {
+    font-size: 1.1rem;
+    top: -40px;
+  }
+  .hero-content h3 {
+    font-size: 1.3rem;
+  }
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+  .hero-image {
+    width: 40%;
+  }
+  .hero-image-container {
+    width: 300px;
+    height: 300px;
+  }
+  .about {
+    height: 400px;
+  }
+  .about-content p {
+    font-size: 0.8rem;
+  }
+  .about-experience-c1 {
+    height: 40%;
+  }
+  .about-experience-c2 {
+    height: 60%;
+    padding: 40px 3%;
+  }
+  .about-experience-c1 h1 {
+    font-size: 1.5rem;
+  }
+  .about-experience-c1 h1 span {
+    font-size: 3rem;
+  }
+  .about-ex-c2-div h4 {
+    font-size: 0.8rem;
+  }
+  .about-ex-c2-div h4 span {
+    font-size: 1.3rem;
+  }
+  .project {
+    width: 40%;
+  }
+  .contact {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .contact-link {
+    width: 100%;
+    justify-content: start;
+  }
+  .contact-info h1 {
+    font-size: 3rem;
+  }
+  .contact-info p {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero-section {
+    height: 350px;
+    padding: 50px 0;
+  }
+  .hero-content {
+    padding: 0 50px 0 25px;
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+    line-height: 50px;
+  }
+  .hero-content h1 span {
+    font-size: 2.9rem;
+  }
+  .hero-content h1::before {
+    font-size: 1rem;
+    top: -30px;
+  }
+  .hero-content h3 {
+    font-size: 1.2rem;
+  }
+  .hero-content p {
+    font-size: 0.8rem;
+    margin-top: 10px;
+  }
+ .hero-image {
+  padding-bottom: 0;
+ }
+  .hero-image-container {
+    width: 250px;
+    height: 250px;
+  }
+  .about-section {
+    height: fit-content;
+  }
+  .about {
+    flex-direction: column;
+    gap: 25px;
+    height: fit-content;
+    margin-top: 25px;
+  }
+  .about-content,
+  .about-content-experience {
+    width: 100%;
+  }
+  .about-content h3 {
+    margin-top: 0;
+  }
+  .services {
+    width: 42%;
+  }
+  .contact-info h1 {
+    font-size: 2.7rem;
+  }
+  .contact-info p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .hamburger-section {
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+  }
+  #hamburger-icon {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #111;
+    padding: 20px 0;
+  }
+  .nav-links ul {
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  .nav-links ul li {
+    width: 100%;
+  }
+  .nav-links ul li a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hero-section {
+    flex-direction: column;
+    height: fit-content;
+    padding: 50px 0 25px 0;
+    gap: 50px;
+  }
+  .hero-content,
+  .hero-image {
+    width: 100%;
+  }
+  .hero-image-container {
+    background: url(image/s.jpeg);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+  }
+  .about-content {
+    padding: 0;
+  }
+  .services {
+    width: 70%;
+  }
+  footer {
+    padding: 0 20px;
+    height: 50px;
+  }
+  .copyright p {
+    font-size: .9rem;
+  }
+  .social-media {
+    gap: 0;
+  }
+  .social-media a {
+    width: 30px;
+    height: 30px;
+  }
+  .social-media a i {
+    font-size: 1rem;
+  }
+  .social-media a:hover, .social-media a:hover i {
+     background-color: var(--black-color);
+     box-shadow: none;
+     color: var(--white-color);
+  }
+}
+@media screen and (max-width: 560px) {
+  .section-heading {
+    height: 50px;
+  }
+  .section-heading h1 {
+    font-size: 2rem;
+  } 
+  .project {
+    width: 80%;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about-content {
+    align-items: center;
+  }
+  .about-content p {
+    text-align: center;
+  }
+  .about-ex-c2-div {
+    width: 90%;
+  }
+  .services-container {
+    padding: 0;
+  }
+  .services p {
+    display: none;
+  }
+  .services {
+    width: 80%;
+  }
+  .project-container {
+    gap: 50px;
+  }
+  .contact-info h1 {
+    font-size: 1.8rem;
+  }
+  .contact-info p {
+    font-size: .8rem;
+  }
+  footer {
+    height: fit-content;
+    flex-direction: column-reverse;
+    gap: 15px;
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 375px) {
+  .hero-content {
+    padding: 0 25px;
+  }
+  .hero-content h1 {
+    font-size: 2.1rem;
+    line-height: 50px;
+  }
+  .hero-content h1 span {
+    font-size: 2.5rem;
+  }
+  .hero-content h1::before {
+    font-size: 1rem;
+    top: -30px;
+  }
+  .hero-content h3 {
+    font-size: 1rem;
+  }
+  .hero-content p {
+    font-size: 0.7rem;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 650px) and (min-width: 561px) {
+  .project {
+    width: 45%;
+  }
+}
