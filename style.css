@@ -86,9 +86,6 @@ body {
 .nav-links {
   width: fit-content;
 }
-.nav-links.active {
-  display: none;
-}
 .nav-links ul {
   gap: 20px;
   list-style: none;
