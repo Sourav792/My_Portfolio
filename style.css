@@ -63,7 +63,6 @@ body {
 .hover-link:hover {
   background-color: var(--black-color);
   color: var(--white-color);
-  box-shadow: 0 0 25px var(--black-color);
 }
 .header-section {
   width: 100%;
@@ -81,7 +80,7 @@ body {
 .logo {
   font-size: 1.7rem;
   font-weight: 700;
-  color: var(--white-color);
+  color: var(--primary-color);
 }
 .nav-links {
   width: fit-content;
@@ -116,7 +115,7 @@ body {
 }
 .hero-section {
   width: 100%;
-  height: 480px;
+  height: 550px;
   margin-top: 60px;
 }
 .hero-content {
@@ -167,15 +166,15 @@ body {
   align-items: end;
 }
 .hero-image-container {
-  width: 350px;
-  height: 350px;
-  background: url(image/saho.png);
+  width: 430px;
+  height: 430px;
+  background: url(image/sourav.png);
   background-size: cover;
   background-position: center;
 }
 .about-section {
   width: 100%;
-  height: 500px;
+  height: 550px;
   padding-top: 60px;
   flex-direction: column;
 }
@@ -235,7 +234,7 @@ body {
 .about-experience-c2 {
   width: 100%;
   height: 50%;
-  padding: 0 5%;
+  padding: 10px 5%;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -246,9 +245,6 @@ body {
   cursor: pointer;
   background-color: var(--black-color);
   transition: box-shadow .3s;
-}
-.about-ex-c2-div:hover {
-  box-shadow: 0 0 15px var(--black-color);
 }
 .about-ex-c2-div h4 {
   text-transform: capitalize;
@@ -265,13 +261,13 @@ body {
 .service-section {
   width: 100%;
   height: fit-content;
-  padding-top: 60px;
+  padding-top: 90px;
   flex-direction: column;
 }
 .services-container {
   width: 100%;
   height: 90%;
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 0 0 50px 0;
   flex-wrap: wrap;
   gap: 15px;
@@ -288,9 +284,6 @@ body {
   background-color: #111;
   border-left: 5px solid var(--primary-color);
   transition: box-shadow .3s;
-}
-.services:hover {
-  box-shadow: 0 0 15px var(--black-color);
 }
 .services p {
   font-size: 0.85rem;
@@ -349,33 +342,52 @@ body {
   height: 220px;
   border-radius: 25px;
   cursor: pointer;
-  background: url(image/vivo-image.jpg);
+  background: url(image/vivo-img.avif);
   background-size: cover;
   background-position: center;
-  transition: background-color 0.5s ease;
   position: relative;
+  overflow: hidden;
+  transition: background-blend-mode .5s,;
 }
 .project:nth-child(2) {
-  background: url(image/phonepe-img.jpg);
+  background: url(image/PhonePe.png);
   background-size: cover;
   background-position: center;
 }
 .project:nth-child(3) {
-  background: url(image/Portfolio-img.jpg);
+  background: url(image/portfolio.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.project:nth-child(4) {
+  background: url(image/amazon.webp);
+  background-size: cover;
+  background-position: center;
+}
+.project:nth-child(5) {
+  background: url(image/next-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.project:nth-child(6) {
+  background: url(image/comingSoon.avif);
   background-size: cover;
   background-position: center;
 }
 .project-content {
   width: 100%;
   height: 100%;
-  display: none;
+  border-radius: 25px;
+  display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
   flex-direction: column;
+  opacity: 0;
   position: absolute;
-  top: 0;
+  bottom: -30%;
   left: 0;
+  transition: bottom .5s, opacity .5s;
 }
 .project-content h3 {
   text-transform: capitalize;
@@ -402,18 +414,19 @@ body {
   color: var(--black-color);
   background-color: var(--white-color);
 }
-.project:hover .project-content {
-  display: flex;
-  border-radius: 25px;
-  background-color: #070707d0;
+.project:hover {
+  background-color: #000000c0;
   background-blend-mode: darken;
-  box-shadow: 0 0 15px #222;
+}
+.project:hover .project-content {
+  opacity: 1;
+  bottom: 0;
 }
 .contact-section {
   width: 100%;
   height: fit-content;
   padding: 60px 0;
-  margin-top: 50px;
+  margin-top: 80px;
   background-color: var(--primary-color);
 }
 .contact {
