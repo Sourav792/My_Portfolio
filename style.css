@@ -168,7 +168,8 @@ body {
 .hero-image-container {
   width: 430px;
   height: 430px;
-  background: url(image/sourav.png);
+  background: url(image/s.jpeg);
+  border-radius: 50%;
   background-size: cover;
   background-position: center;
 }

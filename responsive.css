@@ -196,6 +196,9 @@
   .about-content {
     padding: 0;
   }
+  .project-section, .service-section {
+    padding-top: 0;
+  } 
   .services {
     width: 70%;
   }
@@ -246,6 +249,7 @@
   }
   .services-container {
     padding: 0;
+    margin-top: 35px;
   }
   .services p {
     display: none;
@@ -253,8 +257,15 @@
   .services {
     width: 80%;
   }
+  .project-section {
+    margin-top: 35px;
+  }
   .project-container {
-    gap: 50px;
+    gap: 25px;
+    padding-top: 25px;
+  }
+  .contact-section {
+    margin-top: 35px;
   }
   .contact-info h1 {
     font-size: 1.8rem;
