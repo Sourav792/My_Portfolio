@@ -84,6 +84,8 @@ body {
 }
 .nav-links {
   width: fit-content;
+  display: flex;
+  gap: 20px;
 }
 .nav-links ul {
   gap: 20px;
@@ -109,6 +111,15 @@ body {
 }
 .nav-links ul li a:hover::after {
   width: 100%;
+}
+.mode {
+  width: 40px;
+  height: 40px; 
+  text-decoration: none;
+}
+.mode i {
+  font-size: 1.5rem;
+  color: #fff;
 }
 .hamburger-section {
   display: none;
