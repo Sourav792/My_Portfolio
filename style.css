@@ -354,7 +354,7 @@ body {
   height: 220px;
   border-radius: 25px;
   cursor: pointer;
-  background: url(image/vivo-img.avif);
+  background: url();
   background-size: cover;
   background-position: center;
   position: relative;
@@ -362,7 +362,7 @@ body {
   transition: background-blend-mode .5s,;
 }
 .project:nth-child(2) {
-  background: url(image/PhonePe.png);
+  background: url();
   background-size: cover;
   background-position: center;
 }
@@ -372,7 +372,7 @@ body {
   background-position: center;
 }
 .project:nth-child(4) {
-  background: url(image/amazon.webp);
+  background: url(image/);
   background-size: cover;
   background-position: center;
 }
